@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #f9fafb;
+}
 .container {
   max-width: 1058px;
   width: 100%;
@@ -95,6 +98,11 @@ a:hover {
   justify-content: space-around;
   color: #7f56d9;
   text-align: center;
+  background-color: #fff;
+  padding: 16px 48px 16px 48px;
+  border-radius: 16px;
+  border: 1px solid #eff0f6;
+  margin-bottom: 59pxgi;
 }
 .stats h2 {
   font-family: "Inter", sans-serif;
