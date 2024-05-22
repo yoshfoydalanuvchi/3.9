@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FutureSphere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -30,11 +36,13 @@
           <button class="btn btn--light">Contact Us</button>
         </div>
         <div class="hero__img">
-          <img
-            src="./imgs/hero.png"
-            srcset="./imgs/hero.png 1x, ./imgs/hero@2x.png 2x"
-            alt="simple img"
-          />
+          <picture>
+            <source media="(max-width:320px)" srcset="./imgs/hero-m.png" />
+            <img
+              src="./imgs/hero.png"
+              srcset="./imgs/hero.png 1x, ./imgs/hero@2x.png 2x"
+              alt="simple img"
+          /></picture>
         </div>
         <div class="stats-wrapper">
           <div class="stats">

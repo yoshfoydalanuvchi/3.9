@@ -19,6 +19,9 @@
   margin-top: 15px;
   margin-bottom: 64px;
 }
+.logo img {
+  width: 100%;
+}
 .header__container ul {
   display: flex;
   list-style: none;
@@ -80,11 +83,12 @@ a:hover {
   margin-bottom: 48px;
 }
 .hero__img {
-  width: 1058px;
-  height: 388px;
-  border-radius: 250px;
+  width: 100%;
   overflow: hidden;
   margin-bottom: 48px;
+}
+.hero__img img {
+  width: 100%;
 }
 .stats-wrapper {
   display: flex;
@@ -105,4 +109,56 @@ a:hover {
   font-weight: 400;
   line-height: 32.78px;
   letter-spacing: -0.95px;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 659px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container {
+    max-width: 304px;
+  }
+  .logo {
+    width: 92px;
+  }
+  .header__container {
+    margin-top: 32px;
+  }
+  .header__container ul {
+    display: none;
+  }
+  .header__container .btn {
+    display: none;
+  }
+  .hero__container h1 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.05px;
+    letter-spacing: 0;
+  }
+  .hero__container p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.39px;
+    letter-spacing: -0.5px;
+  }
+  .btn {
+    padding: 5px, 11px, 5px, 11px;
+  }
+  .stats-wrapper {
+    display: block;
+  }
+  .stats h2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    letter-spacing: -0.9599999785423279px;
+  }
+  .stats p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    letter-spacing: -0.9599999785423279px;
+  }
 }
