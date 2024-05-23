@@ -18,6 +18,7 @@
         <div class="logo">
           <a href="#"><img src="imgs/Logo.png" alt="" /></a>
         </div>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
         <ul>
           <li><a href="#">About</a></li>
           <li><a href="#">Careers</a></li>
@@ -25,6 +26,10 @@
           <li><a href="#">Pricing</a></li>
         </ul>
         <button class="btn btn--light">Contact Us</button>
+
+        <label class="menu-icon" for="menu-btn">
+          <img src="./imgs/menu.svg" alt=""
+        /></label>
       </div>
     </header>
     <section class="hero">
@@ -37,7 +42,7 @@
         </div>
         <div class="hero__img">
           <picture>
-            <source media="(max-width:320px)" srcset="./imgs/hero-m.png" />
+            <source media="(max-width:650px)" srcset="./imgs/hero-m.png" />
             <img
               src="./imgs/hero.png"
               srcset="./imgs/hero.png 1x, ./imgs/hero@2x.png 2x"

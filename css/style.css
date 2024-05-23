@@ -39,6 +39,21 @@ a {
 a:hover {
   color: #7f56d9;
 }
+.menu-icon {
+  display: none;
+}
+.menu-btn {
+  display: none;
+}
+.menu-icon .navicon:after {
+  background: #d41919;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
 .btn {
   padding: 8px 30px 8px 30px;
   gap: 5px;
@@ -118,20 +133,51 @@ a:hover {
   line-height: 32.78px;
   letter-spacing: -0.95px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .container {
-    max-width: 659px;
+    max-width: 960px;
+  }
+  .hero__container h1 {
+    font-size: 60px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
   .container {
-    max-width: 304px;
+    max-width: 720px;
+  }
+  .hero__container h1 {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .menu-btn:checked ~ ul {
+    position: absolute;
+    display: block;
+    flex-direction: column;
+    background-color: #1b152b;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    padding: 20px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    text-align: center;
+  }
+  .menu-btn:checked ~ ul li {
+    padding: 5px;
   }
   .logo {
     width: 92px;
   }
   .header__container {
     margin-top: 32px;
+    position: relative;
   }
   .header__container ul {
     display: none;
